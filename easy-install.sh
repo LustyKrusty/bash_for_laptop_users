@@ -1,14 +1,12 @@
 #! /bin/bash
 apt-get update &&
 apt-get upgrade -y &&
-apt-get install rdesktop -y &&
-apt-get install telegram-desktop -y &&
-dpkg -i skypeforlinux-64.deb &&
+apt install rdesktop -y &&
+apt install telegram-desktop -y &&
 dpkg -i viber.deb &&
 dpkg -i teamviewer_15.10.5_amd64.deb &&
-apt-get install libqt5gui5 ||
-apt --fix-broken install -y &&
-apt-get -f install -y &&
+dpkg -i rdesktop_1.8.3-2build1_amd64.deb &&
+apt install install libqt5gui5 &&
 rm .Trash-1000/files/*
 mkdir /usr/local/share/icons &&
 mkdir /usr/local/share/applications &&
