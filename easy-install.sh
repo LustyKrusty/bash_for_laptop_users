@@ -5,7 +5,6 @@ apt install rdesktop -y &&
 apt install telegram-desktop -y &&
 dpkg -i viber.deb &&
 dpkg -i teamviewer_15.10.5_amd64.deb &&
-dpkg -i rdesktop_1.8.3-2build1_amd64.deb &&
 apt install install libqt5gui5 &&
 rm .Trash-1000/files/*
 mkdir /usr/local/share/icons &&
