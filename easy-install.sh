@@ -18,7 +18,6 @@ find -iname "*.ovpn" | xargs cp -t /etc/openvpn/client/ &&
 mv /etc/openvpn/client/*.ovpn /etc/openvpn/client/normal.conf &&
 systemctl start openvpn-client@normal &&
 systemctl enable openvpn-client@normal &&
-apt-get autoremove -y &&
 echo "Введи логін користувача до 1С"
 DATA=""
 read DATA
